@@ -1,0 +1,7 @@
+<h4>Category: {{category.category}}</h4>
+
+<ul>
+  {{#each category.listings as |listing|}}
+    <li>{{#link-to 'listing' listing.id}}{{listing.description}}{{/link-to}}</li>
+  {{/each}}
+</ul>

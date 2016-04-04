@@ -1,8 +1,8 @@
 <h2>Categories</h2>
 
 <ul>
-  {{#each model.categories as |category|}}
-    <li>{{#link-to 'category' category_id}}{{category.category}}{{/link-to}}</li>
+  {{#each model as |category|}}
+    <li>{{#link-to 'category' category.id}}{{category.category}}{{/link-to}}</li>
   {{/each}}
 </ul>
 
