@@ -1,7 +1,7 @@
 <h4>Category: {{category.category}}</h4>
 
 <ul>
-  {{#each category.listings as |listing|}}
+  {{#each sortedListings as |listing|}}
     <li>{{#link-to 'listing' listing.id}}{{listing.title}}{{/link-to}}</li>
   {{/each}}
 </ul>

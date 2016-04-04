@@ -11,7 +11,7 @@ export default Ember.Component.extend({
         category: this.get('category'),
         title: this.get('title') ? this.get('title') : "",
         description: this.get('description') ? this.get('description') : "",
-        price: this.get('price') ? this.get('price') : "",
+        price: parseInt(this.get('price') ? this.get('price') : ""),
         image: this.get('image') ? this.get('image') : "",
 
       };
