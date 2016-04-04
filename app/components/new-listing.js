@@ -9,6 +9,7 @@ export default Ember.Component.extend({
     saveListing() {
       var params = {
         category: this.get('category'),
+        title: this.get('title') ? this.get('title') : "",
         description: this.get('description') ? this.get('description') : "",
         price: this.get('price') ? this.get('price') : "",
         image: this.get('image') ? this.get('image') : "",
